@@ -1,0 +1,52 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Credentials and local keys
+*.key
+*.salt
+*.pem
+*.p12
+*.pfx
+*cookie*.json
+*cookies*.json
+
+# SQLite databases and transient journals
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Runtime state and logs
+*.log
+service-status.json
+05_Web服务/data/*
+!05_Web服务/data/.gitkeep
+02_账号池/数据/*
+!02_账号池/数据/.gitkeep
+03_统一数据库/*.db*
+
+# Local crawled/exported material
+04_数据可视化/*.json
+04_数据可视化/*.xlsx
+04_数据可视化/页面快照/
+04_数据可视化/验收/
+07_工具/_*.json
+# Browser diagnostics, legacy sources and unreviewed exports
+07_工具/_*/
+01_网页爬虫/原始代码/
+99_归档/
+04_数据可视化/图表/
+04_数据可视化/*.csv
+04_数据可视化/*.html
+04_数据可视化/*.png
+04_数据可视化/*.jpg
+04_数据可视化/*.jpeg

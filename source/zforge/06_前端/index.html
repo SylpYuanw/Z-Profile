@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark" data-density="comfy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZForge · 多站点爬虫聚合工作台</title>
+<meta name="description" content="ZForge —— 采集 · 清洗 · 分析 一体化的多站点爬虫工作台">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- ================= 侧栏 ================= -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">Z</div>
+      <div class="brand-text">
+        <div class="brand-name">ZForge</div>
+        <div class="brand-sub">crawler workbench</div>
+      </div>
+    </div>
+    <nav id="nav" aria-label="主导航"></nav>
+    <div class="sidebar-foot">
+      <div>后端 <b id="foot-backend">连接中…</b></div>
+      <div>爬虫 <b id="foot-crawlers">—</b></div>
+      <div>数据 <b id="foot-items">—</b></div>
+    </div>
+  </aside>
+
+  <!-- ================= 主区 ================= -->
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb" id="crumb"></div>
+      <div class="topbar-spacer"></div>
+      <span class="status-pill" id="status-pill" title="后端连接状态">
+        <span class="pulse" id="status-dot"></span><span id="status-text">连接中</span>
+      </span>
+      <button class="icon-btn" id="btn-search" title="命令面板 (Ctrl/⌘ + K)">⌘K</button>
+      <button class="icon-btn" id="btn-density" title="切换信息密度">密度</button>
+      <button class="icon-btn" id="btn-theme" title="切换主题">主题</button>
+    </header>
+
+    <main class="scroll-area" id="view-host" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<!-- ============ 第三方库 (本地, 离线可用) ============ -->
+<script src="vendor/chart.umd.min.js"></script>
+<script src="vendor/xlsx.full.min.js"></script>
+<script src="vendor/sql-wasm.js"></script>
+
+<!-- ============ 核心层 ============ -->
+<script src="js/核心/util.js"></script>
+<script src="js/核心/api.js"></script>
+<script src="js/核心/ui.js"></script>
+<script src="js/核心/charts.js"></script>
+<script src="js/核心/stats.js"></script>
+<script src="js/核心/store.js"></script>
+<script src="js/核心/router.js"></script>
+<script src="js/核心/palette.js"></script>
+<script src="js/核心/projects.js"></script>
+<script src="js/核心/video-metrics.js"></script>
+
+<!-- ============ 视图层 ============ -->
+<script src="js/视图/dashboard.js"></script>
+<script src="js/视图/crawler.js"></script>
+<script src="js/视图/taskflow.js"></script>
+<script src="js/视图/accounts.js"></script>
+<script src="js/视图/data.js"></script>
+<script src="js/视图/sql.js"></script>
+<script src="js/视图/analysis.js"></script>
+<script src="js/视图/logs.js"></script>
+
+<script src="js/boot.js"></script>
+</body>
+</html>

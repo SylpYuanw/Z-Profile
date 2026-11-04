@@ -1,0 +1,20 @@
+# ZForge 后端依赖
+#
+# 安装:  python -m pip install -r 05_Web服务/requirements.txt
+#
+# 说明: 本机 Python 3.13 已装齐下面这些, 换机器时需要装。
+
+# ---- 必需 ----
+flask>=3.0            # Web 服务
+selenium>=4.20        # 浏览器自动化采集
+lxml>=5.0             # XPath 解析
+requests>=2.31        # HTTP 请求
+
+# ---- 可选 (缺了不影响启动, 只是部分功能不可用) ----
+openpyxl>=3.1         # 可选 Python Excel 工具；前端导出使用 SheetJS
+
+# ---- 不需要装的 ----
+# 说明: 加密保险库(server/core/vault.py)用标准库手写实现,
+#       故意不依赖 cryptography —— 少一个依赖就少一道装不上的门槛。
+#       浏览器内 SQL 用前端 vendor 里的 sql.js, 不需要 Python 的 sqlalchemy/pymysql。
+#       实时日志用 Flask 原生 SSE, 不需要 flask_socketio。

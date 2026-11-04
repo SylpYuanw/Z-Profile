@@ -1,0 +1,61 @@
+/* ============================================================================
+   ZForge · 设计令牌
+   ========================================================================== */
+:root {
+  color-scheme: dark;
+
+  --bg-0: #07090d;
+  --bg-1: #0b0e14;
+  --bg-2: #11151d;
+  --bg-3: #171c26;
+  --bg-glass: rgba(17, 21, 29, .74);
+
+  --line-0: rgba(255, 255, 255, .06);
+  --line-1: rgba(255, 255, 255, .11);
+  --line-2: rgba(255, 255, 255, .18);
+
+  --fg-0: #e8edf5;
+  --fg-1: #9aa6b8;
+  --fg-2: #616d80;
+  --fg-3: #3d4655;
+
+  --brand: #4f8cff;
+  --brand-2: #22d3ee;
+  --brand-3: #a855f7;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+  --accent: var(--brand);
+
+  --font-ui: "Inter", -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Mono", Consolas, "Microsoft YaHei", monospace;
+
+  --fs-xs: 11px; --fs-sm: 12.5px; --fs-md: 14px;
+  --fs-lg: 17px; --fs-xl: 22px; --fs-2xl: 30px; --fs-3xl: 42px;
+
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px; --sp-7: 48px;
+
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px; --r-xl: 20px;
+  --shadow-2: 0 8px 28px rgba(0, 0, 0, .45);
+
+  --sidebar-w: 236px;
+  --header-h: 56px;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg-0: #f2f5fa; --bg-1: #ffffff; --bg-2: #f7f9fc; --bg-3: #eef2f8;
+  --bg-glass: rgba(255, 255, 255, .82);
+  --line-0: rgba(16, 24, 40, .07);
+  --line-1: rgba(16, 24, 40, .12);
+  --line-2: rgba(16, 24, 40, .22);
+  --fg-0: #101828; --fg-1: #475467; --fg-2: #667085; --fg-3: #98a2b3;
+  --shadow-2: 0 8px 28px rgba(16, 24, 40, .08);
+}
+
+:root[data-density="compact"] {
+  --sp-4: 11px; --sp-5: 16px; --sp-6: 22px;
+  --fs-md: 13px; --fs-lg: 15.5px;
+}
